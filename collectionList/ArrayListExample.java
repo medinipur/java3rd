@@ -1,8 +1,6 @@
 package collectionList;
-
+//
 import java.util.ArrayList;
-
-
 
 public class ArrayListExample {
 
@@ -58,3 +56,5 @@ public class ArrayListExample {
 	  }
 	  
 	}
+
+

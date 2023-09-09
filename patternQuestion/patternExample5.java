@@ -1,0 +1,54 @@
+package patternQuestion;
+
+public class patternExample5 {
+
+	public static void main(String[] args) {
+		
+       pattern5(5);
+	}
+	static void pattern5(int n) {
+			int i,j;
+			int num=1;
+
+  
+        for (i = 1; i <= n; i++) {
+            
+            for (j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+  
+            // inner loop to print spaces
+            int spaces = 2 * (n - i);
+            for (j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+  
+            for (j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+  
+            System.out.println();
+        }
+  
+        
+        for (i = n; i >= 1; i--) {
+            // inner loop to print stars
+            for (j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+  
+            // inner loop to print spaces
+            int spaces = 2 * (n - i);
+            for (j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
+  
+            // inner loop to print stars
+            for (j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+  
+            System.out.println();
+        }
+    }
+}

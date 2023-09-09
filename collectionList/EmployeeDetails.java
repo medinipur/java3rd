@@ -13,8 +13,8 @@ public class EmployeeDetails {
 		Map<String, List<String>>_objEmployeeMap =new HashMap<>();
 		List<String>_objEmployeeList =new ArrayList<>();
 		
-		_objEmployeeList =Arrays.asList("subha","project Manager","pm", "$12k");
-		_objEmployeeMap.put("1001",_objEmployeeList);
+		_objEmployeeList =Arrays.asList("name","location");
+		_objEmployeeMap.put("id",_objEmployeeList);
 		
 		
 		for(Map.Entry<String, List<String>> entry:_objEmployeeMap.entrySet()) {

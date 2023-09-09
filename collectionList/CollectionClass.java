@@ -1,7 +1,7 @@
 package collectionList;
-
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.ArrayList;
+
 import java.util.List;
 
 public class CollectionClass {
@@ -17,6 +17,8 @@ public class CollectionClass {
 		li.add(15);
 		
 	System.out.println(li);
+	
+	
 	}
 
 }
