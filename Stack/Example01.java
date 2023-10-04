@@ -59,6 +59,7 @@ public class Example01 {
 		 
 		   Iterator<String> cardsIterator = stackOfCards.iterator();
 		   
+		  
 		   while(cardsIterator.hasNext()) {
 			   String card = cardsIterator.next();
 			   System.out.println(card);
