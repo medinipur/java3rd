@@ -16,8 +16,7 @@ public class patternExample5 {
             for (j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-  
-            // inner loop to print spaces
+            
             int spaces = 2 * (n - i);
             for (j = 1; j <= spaces; j++) {
                 System.out.print(" ");

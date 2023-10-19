@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package SinglyLinkedListInterview;
 
 public class MaximumTwinSum {
 	public static class Node{

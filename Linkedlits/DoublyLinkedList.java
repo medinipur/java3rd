@@ -21,6 +21,8 @@ public class DoublyLinkedList {
  public Node insertNodeAtStart(int data) {
 	 Node new_node= new Node(data);
 	 
+	 //current head becomes  this new node next
+	 
 	 new_node.next=head;
 	 new_node.prev=null;
 	 
@@ -32,6 +34,7 @@ public class DoublyLinkedList {
  }
   
  
+ //delete node
  
       public void delateNode() {
     	 Node temp=head;
@@ -55,7 +58,8 @@ public class DoublyLinkedList {
  }
  
  
- 
+// show LinkedList
+      
  public void showLinkedList() {
 	 Node head_node=head;
 	 Node tail_node=null;
@@ -66,6 +70,9 @@ public class DoublyLinkedList {
 	     tail_node=head_node;
 		 head_node=head_node.next;
 	 }
+	 
+	 //BackWord means(reverse) 
+	 
 	 System.out.print("\nIn Backword Direction");                                                      
 	 while(tail_node!=null) {
 		 System.out.print(tail_node.data+ " ");
@@ -78,7 +85,7 @@ public class DoublyLinkedList {
  
 
  
-	public static void main(String[] args) {
+   public static void main(String[] args) {
 		DoublyLinkedList  obj= new DoublyLinkedList ();
 		for( int i=0; i<100; i+=10){
 			obj.insertNodeAtStart(i);

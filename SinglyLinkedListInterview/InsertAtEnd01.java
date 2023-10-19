@@ -1,6 +1,6 @@
-package SinglyLinkedList;
+package SinglyLinkedListInterview;
 
-import SinglyLinkedList.InsertAt02.Node;
+import SinglyLinkedListInterview.InsertAt02.Node;
 
 public class InsertAtEnd01 {
 	public static class Node{

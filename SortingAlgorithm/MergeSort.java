@@ -5,25 +5,27 @@ import java.util.Scanner;
 public class MergeSort {
 	
 
-
+/*
+ * Merge sort logic
+ */
 
 public void doMargeSort(int []number) {
-	int inputLength=number.length;
-	if(inputLength<=1) {
+	int n=number.length;
+	if(n<=1) {
 		return ;
 	}
 	
 	
-	int midIndex=inputLength/2;
-	int[]leftHalf= new int [midIndex];
-	int []rightHalf=new int[inputLength-midIndex];
+	int mid=n/2;
+	int[]leftHalf= new int [mid];
+	int []rightHalf=new int[n-mid];
 	
-	for(int i=0; i<midIndex; i++) {
+	for(int i=0; i<mid; i++) {
 		leftHalf[i]=number[i];
 	}
 	
-	for(int i=midIndex; i<inputLength; i++) {
-		rightHalf[i-midIndex]=number[i];
+	for(int i=mid; i<n; i++) {
+		rightHalf[i-mid]=number[i];
 	}
 	
 	doMargeSort(leftHalf);
@@ -33,7 +35,7 @@ public void doMargeSort(int []number) {
 	
 	
 }
-public void mergeSort(int []inputArray, int[]leftHalf, int[]rightHalf) {
+public void mergeSort(int []arr, int[]leftHalf, int[]rightHalf) {
 
 	
 	int leftSize=leftHalf.length;
@@ -42,19 +44,19 @@ public void mergeSort(int []inputArray, int[]leftHalf, int[]rightHalf) {
 	
 	while(i<leftSize && j<rigthSize) {
 		if(leftHalf[i]<=rightHalf[j]) {
-		 inputArray[k++]=leftHalf[i++];
+		 arr[k++]=leftHalf[i++];
 		}else {
-			inputArray[k++]=rightHalf[j++];
+			arr[k++]=rightHalf[j++];
 		}
 }
 
 	while(i<leftSize) {
-		inputArray[k++]=leftHalf[i++];
+		arr[k++]=leftHalf[i++];
 
 	}
 		
 	while(j<rigthSize) {
-		inputArray[k++]=rightHalf[j++];
+		arr[k++]=rightHalf[j++];
 	}
 	
 }	

@@ -1,6 +1,6 @@
-package SinglyLinkedList;
+package SinglyLinkedListInterview;
 
-import SinglyLinkedList.LinkListBasics.Node;
+import SinglyLinkedListInterview.LinkListBasics.Node;
 
 public class NthNodefromEnd {
 	

@@ -14,6 +14,7 @@ public class insertionInStack {
 		st.push(4);
 		st.push(5);
 		System.out.println(st);
+		
 	   
 		int index=2;
 		int x=7;

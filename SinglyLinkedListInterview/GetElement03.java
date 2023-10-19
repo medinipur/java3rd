@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package SinglyLinkedListInterview;
 
 public class GetElement03 {
 	class Node{
